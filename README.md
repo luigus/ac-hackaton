@@ -5,7 +5,7 @@
 
 Members
 
-- [Lineu Filho](mailto:lineu.filho@avenuecode.com)![](images/Aspose.Words.3af5fd2b-3dee-4385-afc5-e2522ae52a8d.001.png)
+- [Lineu Filho](mailto:lineu.filho@avenuecode.com)
 - [Luiz Consani](mailto:luiz.consani@avenuecode.com)
 
 Solution
