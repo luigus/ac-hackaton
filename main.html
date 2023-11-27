@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('BG_AI.png');
+      background-size: cover; /* Para cobrir toda a área da tela */
+      background-repeat: no-repeat; /* Para evitar repetição da imagem */
+      background-attachment: fixed; /* Para manter a imagem fixa enquanto a página rola */
+      margin: 0; /* Remova a margem padrão do body para evitar espaços em branco */
+      padding: 0; /* Remova o padding padrão do body para evitar espaços em branco */
+    }
+  </style>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <style>
+    .df-messenger-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8); /* Altere a cor de fundo conforme necessário */
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div class="df-messenger-container">
+    <df-messenger
+      project-id="ac-genai"
+      agent-id="653bab08-ec76-4720-b578-ced22e5660ab"
+      language-code="en"
+    >
+      <df-messenger-chat-bubble chat-title="agent-oracle"></df-messenger-chat-bubble>
+    </df-messenger>
+  </div>
+</body>
+</html>
