@@ -10,6 +10,36 @@ Members
 
 Solution
 
+Within Vertex AI, it is possible to create a Chat-type application, and this application resides within a set of applications called Search and Conversation.
+
+This Search and Conversation application needs to access data in some way, whether it's through JSON, HTML, CSV, or other formats. To do this, we will place our database into a Cloud Storage and create a bucket to store the PDF containing all the problems and solutions related to Oracle database, as shown in the images below.
+
+![](images/doc1)
+![](images/doc2)
+
+With the bucket properly configured, we can now create our application.
+
+![](images/doc3)
+
+It should point to the data source, Data Store, which will be verified within Vertex AI so that the chat can respond to user questions regarding their database-related queries. The application can have as many Data Stores as necessary.
+
+![](images/doc4)
+![](images/doc5)
+
+With the Data Store correctly linked to our application, we can now verify that everything is set up correctly and start asking questions to our chat. In the configuration tab, note that our model is already trained to answer questions, as shown in the image below.
+
+![](images/doc6)
+
+In the Manage tab on the left corner, we can go to Integrations and create any type of integration we desire, including Google Chat, for example. In our application, we will create one based on DialogFlow Message.
+
+![](images/doc7)
+
+DialogFlow allows us to create our chatbot on an HTML page, providing us with the necessary tags to be added to our page. With this code, you can see, by clicking "Try it now," the chat button in the lower right corner. You can use it to test if everything is working as planned.
+
+![](images/doc8)
+
+In summary:
+
 We used a Search and Conversation application to create the chat in which users could search for their various questions regarding problems using the Oracle database. The application was trained using a bucket that contains a file with the mapping of problems and solutions. After training, we created a chatbot-linked page with the application where we can ask different questions and obtain accurate answers according to what was trained, as shown in the images below.
 
 ![](images/Aspose.Words.3af5fd2b-3dee-4385-afc5-e2522ae52a8d.002.jpeg)
